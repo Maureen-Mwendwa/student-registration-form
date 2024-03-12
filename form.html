@@ -1,0 +1,107 @@
+<!-- Create a html form to register a new student
+Gather the following information using the relevent form elements:
+Name
+Date of Birth
+Gender
+Address
+Telephone
+Email Address
+Course
+The form should have two buttons:
+Register
+Cancel -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="styleform.css">
+</head>
+<body>
+    <header>
+        <h1 class="h1">Welcome to Our Student Registration Portal</h1>
+        <p class="Welcome">We're excited to have you join our community! Please fill out the form below to register as a new student.</p>
+    </header>
+    <form action="C:\Users\hp\Desktop\Data" method="post">
+        <label for="name">Name*:</label>
+        <input type="text" id="name" name="name" placeholder="Enter Your Name" required pattern="[A-Za-z ]+" title="Please enter a valid name (letters and spaces only)"><br><br>
+<!-- pattern="[A-Za-z ]+": This regular expression pattern ensures that only letters (uppercase and lowercase) and spaces are allowed in the input field. If the user enters anything else, the form will not be submitted.
+title="Please enter a valid name (letters and spaces only)": This attribute provides a tooltip or additional information to the user when they hover over the input field, informing them of the required input format.+: This is the quantifier that indicates that the preceding character class (or character) must occur one or more times. So, [A-Za-z ]+ matches one or more occurrences of uppercase letters, lowercase letters, or spaces in succession. -->
+        <label for="Date of Birth">Date of Birth (DOB)*:</label>
+        <input type="date" id="Date of Birth" name="Date of Birth" placeholder="dd/mm/yyyy" required><br><br>
+        <fieldset> <!--groups related fields-->
+            <legend>Gender*:</legend> <!--legend enables you to provide a title for the group-->
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="Gender" value="Male" required> 
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="Gender" value="Female" required>
+        </fieldset><br><br> <!--Using the same name attribute for both radio buttons groups them together, allowing users to select one option-->
+        <fieldset> <!--groups related fields-->
+            <legend>Address*:</legend> <!--legend enables you to provide a title for the group-->
+            <label for="Country">Country*:</label>
+            <select id="Country" name="Country" required> <!--The "id", uniquely identifies the dropdown list, which can be referenced by JavaScript or CSS. The name is used as an identifier when submitting the form.-->
+                <option value="" disabled selected>Select Country</option> <!--an initial option with an empty value, which is disabled and selected by default-->
+                <option value="Kenya">Kenya</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Uganda">Uganda</option>
+                <option value="Rwanda">Rwanda</option>
+                <option value="Burundi">Burundi</option>
+                <option value="South Sudan">South Sudan</option>
+        <!--The value attribute represents the value that will be submitted when the form is submitted, and the text between the opening and closing <option> tags represents the visible text in the dropdown.-->
+            </select><br><br>
+            <label for="State/Province/Region/County">State/Province/Region/County*:</label>
+            <input type="text" id="State/Province/Region/County" name="State/Province/Region/County" required><br><br>
+            <label for="City/Town">City/Town*:</label>
+            <input type="text" id="City/Town" name="City/Town" required><br><br>
+            <label for="Postal/Zip Code">Postal/Zip Code*:</label>
+            <input type="number" id="Postal/Zip Code" name="Postal/Zip Code" placeholder="428-679456" required><br><br> 
+            <input type="reset" class="resetcountries">
+        </fieldset><br><br>
+        <label for="Telephone">Telephone*:</label>
+        <input type="tel" id="Telephone" name="Telephone" placeholder=" e.g. +254701234567" required><br><br>
+        <label for="Email">Email Address*:</label>
+        <input type="email" id="Email" name="Email" placeholder="e.g. XYZ@gmail.com" required><br><br>
+        <fieldset>
+            <legend>Select Course(s) to Register*</legend>
+            <input type="checkbox" id="Introduction to Computer Science" name="Course">
+            <label for="Introduction to Computer Science">Introduction to Computer Science</label><br><br>
+            <input type="checkbox" id="Programming Fundamentals" name="Course">
+            <label for="Programming Fundamentals">Programming Fundamentals</label><br><br>
+            <input type="checkbox" id="Data Structures and Algorithms" name="Course">
+            <label for="Data Structures and Algorithms">Data Structures and Algorithms</label><br><br>
+            <input type="checkbox" id="Database Management Systems" name="Course">
+            <label for="Database Management Systems">Database Management Systems</label><br><br>
+            <input type="checkbox" id="Web Development" name="Course">
+            <label for="Web Development">Web Development</label><br><br>
+            <input type="checkbox" id="Software Engineering" name="Course">
+            <label for="Software Engineering">Software Engineering</label><br><br>
+            <input type="checkbox" id="Computer Networking" name="Course">
+            <label for="Computer Networking">Computer Networking</label><br><br>
+            <input type="checkbox" id="Cybersecurity" name="Course">
+            <label for="Cybersecurity">Cybersecurity</label><br><br>
+            <input type="checkbox" id="Artificial Intelligence and Machine Learning" name="Course">
+            <label for="Artificial Intelligence and Machine Learning">Artificial Intelligence and Machine Learning</label><br><br>
+            <input type="checkbox" id="Mobile App Development" name="Course">
+            <label for="Mobile App Development">Mobile App Development</label><br><br>
+            <input type="checkbox" id="Cloud Computing" name="Course">
+            <label for="Cloud Computing">Cloud Computing</label><br><br>
+            <input type="checkbox" id="Operating Systems" name="Course">
+            <label for="Operating Systems">Operating Systems</label><br><br>
+            <input type="checkbox" id="IT Project Management" name="Course">
+            <label for="IT Project Management">IT Project Management</label><br><br>
+            <input type="checkbox" id="Human-Computer Interaction" name="Course">
+            <label for="Human-Computer Interaction">Human-Computer Interaction</label><br><br>
+            <input type="checkbox" id="Computer Graphics and Visualization" name="Course">
+            <label for="Computer Graphics and Visualization">Computer Graphics and Visualization</label><br><br>
+            <input type="reset" class="Coursereset">
+        </fieldset><br><br>
+        <button type="submit" class="Register">Register</button>
+        <button type="reset" class="Cancel">Cancel</button>
+    </form>
+    <footer>
+        <p class="footer">&copy; 2024 Cohort Student Intake</p>
+    </footer>
+</body>
+</html>

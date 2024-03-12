@@ -1,0 +1,61 @@
+.h1 {
+    background-color: rgb(30, 236, 23);
+    font-size: xx-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Welcome {
+    font-size: x-large;
+    color: #d80808;
+}
+body {
+    background-color: aqua;
+}
+.resetcountries {
+    background-color: #f309a5;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 50px;
+}
+.resetcountries:hover {
+    background-color: rgb(240, 62, 18);
+}
+.Coursereset {
+    background-color: #f309a5;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 50px;
+}
+.Coursereset:hover {
+    background-color: rgb(240, 62, 18);
+}
+
+}
+.Register {
+    background-color: rgb(48, 15, 236);
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 50px;
+}
+.Register:hover {
+    background-color: rgb(24, 20, 255);
+
+}
+.Cancel {
+    background-color: #f80aa9;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 50px;
+}
+.Cancel:hover {
+    background-color: rgb(240, 62, 18);
+
+}
+
+.footer {
+    background-color: rgb(83, 238, 12);
+    font-size: x-large;
+}
